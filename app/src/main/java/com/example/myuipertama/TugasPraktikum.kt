@@ -22,6 +22,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.wear.compose.material.Card
 import com.example.myuipertama.R
 
 @Composable
@@ -98,6 +99,46 @@ fun Profileku(modifier: Modifier = Modifier) {
                 textAlign = TextAlign.Center,
                 fontWeight = FontWeight.Bold
             )
+            Spacer(modifier = Modifier.height(16.dp))
+
+            Card(
+                modifier = Modifier
+                    .fillMaxWidth(1f)
+                    .padding(10  .dp),
+                colors = CardDefaults.cardColors(
+                    containerColor = Color.DarkGray
+                )
+            ) {
+                Row (){
+                    val gambar = painterResource(R.drawable.privasi)
+                    Image(
+                        painter = gambar,
+                        contentDescription = null,
+                        modifier = Modifier
+                            .size(50.dp)
+                            .padding(3.dp)
+                    )
+                    Spacer(modifier = Modifier.width(30.dp))
+                    Row() {
+                        Text(
+                            stringResource(R.string.privacy),
+                            color = Color.White,
+                            fontSize = 16.sp,
+                            modifier = Modifier.padding(top = 15.dp)
+                        )
+                        Spacer(modifier = Modifier.width(180.dp))
+                        val gambar = painterResource(R.drawable.play)
+                        Image(
+                            painter = gambar,
+                            contentDescription = null,
+                            modifier = Modifier
+                                .size(50.dp)
+                                .padding(3.dp)
+                        )
+                    }
+                }
+            }
+
 
         }
     }
