@@ -12,7 +12,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.advancelayout.ActivitasPertama
+import com.example.myuipertama.ui.Profileku
 import com.example.myuipertama.ui.theme.MyuipertamaTheme
 
 class MainActivity : ComponentActivity() {
@@ -22,7 +22,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             MyuipertamaTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    ActivitasPertama(
+                    Profileku(
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
