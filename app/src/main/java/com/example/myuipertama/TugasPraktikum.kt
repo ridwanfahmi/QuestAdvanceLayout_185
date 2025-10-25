@@ -66,7 +66,11 @@ fun Profileku(modifier: Modifier = Modifier) {
                     contentDescription = "Instagram",
                     modifier = Modifier.size(45.dp)
                 )
-
+                Image(
+                    painterResource(R.drawable.linkedin),
+                    contentDescription = "LinkedIn",
+                    modifier = Modifier.size(45.dp)
+                )
             }
 
         }
