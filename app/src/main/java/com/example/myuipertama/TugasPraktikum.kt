@@ -54,6 +54,12 @@ fun Profileku(modifier: Modifier = Modifier) {
                     contentDescription = "Facebook",
                     modifier = Modifier.size(45.dp)
                 )
+                Image(
+                    painterResource(R.drawable.gmail),
+                    contentDescription = "Gmail",
+                    modifier = Modifier.size(28.dp)
+                        .clip(CircleShape),
+                    contentScale = ContentScale.Crop
 
             }
 
