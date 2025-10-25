@@ -60,6 +60,12 @@ fun Profileku(modifier: Modifier = Modifier) {
                     modifier = Modifier.size(28.dp)
                         .clip(CircleShape),
                     contentScale = ContentScale.Crop
+                )
+                Image(
+                    painterResource(R.drawable.instagram),
+                    contentDescription = "Instagram",
+                    modifier = Modifier.size(45.dp)
+                )
 
             }
 
